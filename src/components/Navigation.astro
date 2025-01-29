@@ -1,0 +1,106 @@
+---
+import "../CSS/fontawesome-free-6.7.2-web/css/all.css";
+---
+
+<nav class="flex justify-around p-3">
+  <div class="navbar">
+    <input type="checkbox" id="toggle" />
+
+    <label for="toggle" class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <ul class="nav-list">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Menu</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </div>
+  <div >
+    <h2 class="pl-9 text-2xl">Jack</h2>
+    <h6>Restaurant&Bar</h6>
+  </div>
+  <div><a href=""><i class="fa-brands fa-facebook-f"></i></a>
+  <a href=""><i class="fa-brands fa-instagram"></i></a>
+  <a href=""><i class="fa-brands fa-pinterest"></i></a> </div>
+</nav>
+
+<style>
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #d8c1c19d;
+    padding: 10px 20px;
+    position: relative;
+  }
+
+  #toggle {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .menu-toggle span {
+    background-color: white;
+    height: 3px;
+    width: 25px;
+    margin: 3px 0;
+    transition: all 0.3s ease;
+  }
+
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    background-color:rgb(243, 221, 221);
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 150px;
+    text-align: center;
+    z-index: 20;
+    opacity: 0.6;
+    
+  }
+
+  .nav-list li {
+    margin: 10px 0;
+  }
+
+  .nav-list a {
+    text-decoration: none;
+    color: rgb(32, 25, 25);
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+
+  #toggle:checked ~ .nav-list {
+    display: flex;
+  }
+
+  #toggle:checked + .menu-toggle span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  #toggle:checked + .menu-toggle span:nth-child(2) {
+    opacity: 0;
+  }
+
+  #toggle:checked + .menu-toggle span:nth-child(3) {
+    transform: rotate(-35deg) translate(5px, -5px);
+  }
+  i{
+    font-size: 23px;
+    margin-left: 10px;
+    padding-top: 18px;
+   
+  }
+</style>

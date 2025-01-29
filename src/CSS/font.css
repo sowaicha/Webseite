@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'PlaywriteAUSA';
+    src: url(../assets/font/PlaywriteAUSA-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+p{
+    font-family:'PlaywriteAUSA';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+}
