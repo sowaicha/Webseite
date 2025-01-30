@@ -3,10 +3,10 @@ import Navigation from "../components/Navigation.astro";
 import Layout from "../layouts/Layout.astro";
 import Footer from "../components/Footer.astro";
 import ess from "../assets/images/ess.avif";
-import apper from "../assets/images/apper.webp";
+import apper from "../assets/images/apper.jpg";
 import drink from "../assets/images/drink.webp";
 import dessert from "../assets/images/dessert.avif";
-import breakfast from "../assets/images/break.avif";
+import breakfast from "../assets/images/breakfast.webp";
 import pasta from "../assets/images/pasta.webp";
 import red from "../assets/images/red.webp";
 import fuss from "../assets/images/fuss.webp";
@@ -22,192 +22,176 @@ import "../CSS/font.css";
 <Layout>
     <Navigation />
     <section class="relative">
-        <img
+        <img 
             class="image w-[100vw] object-cover h-[600px]"
             src={ess.src}
             alt="esen photo"
         />
-        <div
-            class="m-auto text-white absolute bottom-[16rem] left-[10rem] md:left-[180px] text-center lg:left-[50rem]"
-        >
-            <h6 class="text-2xl">welcome to Jack</h6>
-            <h3 class="text-5xl font-PlaywriteAUSA">Restaurant&Bar</h3>
+        <div class="m-auto text-white absolute top-[40%] left-[30%] right-[30%]">
+            <h6 class="text-lg md:text-2xl absolute bottom-[90%] left-[33%] right-[30%] ">welcome to Jack</h6>
+            <h3 class="text-3xl md:text-5xl font-bold lg:text-center">
+                Restaurant&Bar
+            </h3>
         </div>
     </section>
     <section class="relative">
-        <div
+        <!-- <div
             class="text-center absolute left-[25rem] bottom-[5px] lg:left-[55rem]"
         >
-            <a href="#"><h6 class="align-middle">Scroll Down</h6></a>
+            <a class="align-middle cursor-pointer" href="#About"><h6 class="align-middle">Scroll Down</h6></a>
             <br class="border-" />
             <br />
             <br />
-            <h6>ABOUT RESTAURANT</h6>
-        </div>
+            <h6   id="About ">ABOUT RESTAURANT</h6>
+        </div> -->
     </section>
-    <div class="text-center">
+
+    <section><div class="text-center">
         <p class="w-[600px] text-4xl pt-[50px] pb-[60px] m-auto">
             Food, in the end in our own tradition ,is something holy.It's not
             about nutriients and calories .It's about sharing . It's about
             honesty .It's about identity
         </p>
         <a href="#"
-            ><button
-                class="border hover:bg-slate-500 hover:scale-x-100 linear ease-out duration-100 flex-row p-4 m-auto"
-                >READ MORE</button
-            ></a
-        >
+            > <button class="relative overflow-hidden px-8 py-4  text-white font-bold rounded-lg border border-white-500 bg-transparent group">
+                <span class="absolute left-0 top-0 h-full w-0 bg-orange-500 transition-all duration-500 group-hover:w-full"></span>
+                <span class="relative  text-black z-10">READ-MORE</span>
+              </button>
+        
     </div>
-    <div class="relative md:flex mt-6 flex-wrap flex-row gap-0">
+</section>
+    
+<section class="grid grid-cols-1 sm:grid-cols-2  mt-6 h-auto p-4">
+    <div class="relative">
+        <img src={apper.src} alt="Aperitifs" class="w-full h-full  hover:scale-105 linear duration-300 object-cover">
+        <span class="absolute bottom-[40%] left-4 text-white text-lg font-bold">APÉRITIFS</span>
+    </div>
+    <div class="relative">
+        <img src={drink.src} alt="Drinks" class="w-full h-full hover:scale-105 linear duration-300 object-cover ">
+        <span class="absolute bottom-[40%] left-4 text-white text-lg font-bold">DRINKS</span>
+    </div>
+    <div class="relative">
+        <img src={dessert.src} alt="Desserts" class="w-full hover:scale-105 linear duration-300 h-[650px] object-cover ">
+        <span class="absolute bottom-[40%] left-4 text-white text-lg font-bold">DESSERTS</span>
+    </div>
+    <div class="relative">
+        <img src={breakfast.src} alt="Breakfast" class="w-full hover:scale-105 linear duration-300 h-full object-cover ">
+        <span class="absolute bottom-[40%] left-4 text-white text-lg font-bold">BREAKFAST</span>
+    </div>
+</section>
+<section>
+    <div class="w-[600px] text-center pt-[60px] pb-[60px] m-auto">
+    <h6 class="text-2xl mb-4">OUR SPECIALS</h6>
+    <p>
+        Good Food starts with good ingridients .<br /> We only bring you the best.
+    </p>
+</div></section>
+
+
+<section class="m-auto md:flex w-[70vw] justify-around gap-4 mb-[30px]">
+    <div
+        class="relative flex justify-center items-center w-[610px] h-[600px] md:w-[900px] hover:scale-105 linear duration-300 lg:w-[350px] lg:h-[500px]"
+    >
         <img
-            class="w-full hover:scale-105 linear duration-300 h-[600px] object-cover lg:basis-[50%]"
-            src={apper.src}
-            alt="apperitif"
+            class="absolute top-0 left-0 bottom-0 right-0 z-[-1] h-full object-cover"
+            src={pasta.src}
+            alt=""
         />
-        <h6 class="absolute text-white text-2xl left-[150px] top-[300px]">
-            Aperitives
-        </h6>
+        <h6 class="bg-white p-5">Pasta Carbona</h6>
+    </div>
+    <div
+        class="relative flex justify-center items-center w-[610px] h-[600px] md:w-[900px] hover:scale-105 linear duration-300 lg:w-[350px] lg:h-[500px]"
+    >
         <img
-            class="w-full hover:scale-105 linear duration-300 h-[600px] object-cover lg:basis-[50%]"
-            src={drink.src}
-            alt="drink"
-        />
-        <h6 class="absolute text-white text-2xl left-[70rem] top-[300px]">
-            Drinks
-        </h6>
-        <img
-            class="flex-col w-full hover:scale-105 linear duration-300 h-[600px] object-cover lg:basis-[50%] md:w-[400px]"
-            src={dessert.src}
+            class="absolute top-0 left-0 bottom-0 right-0 z-[-1] h-full object-cover"
+            src={red.src}
             alt="dessert"
         />
-        <h6 class="absolute text-white text-2xl left-[150px] top-[60rem]">
-            Desserts
-        </h6>
+        <h6 class="bg-white p-5">Red Dessert</h6>
+    </div>
+    <div
+        class="relative flex justify-center items-center w-[610px] h-[600px] md:w-[900px] hover:scale-105 linear duration-300 lg:w-[350px] lg:h-[500px]"
+    >
         <img
-            class="w-full hover:scale-105 linear duration-300 h-[600px] object-cover lg:basis-[50%]"
-            src={breakfast.src}
-            alt="breakfast"
+            class="absolute top-0 left-0 bottom-0 right-0 z-[-1] h-full object-cover"
+            src={fuss.src}
+            alt="fussili"
         />
-        <h6 class="absolute text-white text-2xl left-[70rem] top-[60rem]">
-            Breakfast
-        </h6>
+        <h6 class="bg-white p-5">Sweet Fussili</h6>
     </div>
-    <div class="w-[600px] text-center pt-[60px] pb-[60px] m-auto">
-        <h6 class="text-2xl mb-4">OUR SPECIALS</h6>
-        <p>
-            Good Food starts with good ingridients .<br /> We only bring you the
-            best.
-        </p>
-    </div>
-
-    <section
-        class="mb-[50px] relative md:flex justify-around gap-[20px] mr-[30px] ml-[30px] lg:ml-[300px] lg:mr-[300px]"
-    >
-        <div>
-            <img
-                class="m-auto w-[610px] h-[600px] md:w-[900px] hover:scale-105 linear duration-300 lg:w-[350px] basis-[25%] lg:h-[500px] object-cover"
-                src={pasta.src}
-                alt=""
-            />
-            <h6
-                class="absolute top-[280px] left-[230px] md:left-[50px] md:top-[260px] p-5 bg-white lg:left-[130px] lg:top-[250px]"
-            >
-                Pasta Carbona
-            </h6>
-        </div>
-        <div>
-            <img
-                class="m-auto md:w-[900px] w-[610px] hover:scale-105 linear duration-300 h-[600px] lg:w-[350px] lg:h-[500px] basis-[25%] object-cover"
-                src={red.src}
-                alt="dessert"
-            />
-            <h6
-                class="absolute top-[890px] left-[230px] p-5 bg-white md:left-[300px] md:top-[260px] lg:left-[600px] lg:top-[250px]"
-            >
-                Red Dessert
-            </h6>
-        </div>
-        <div>
-            <img
-                class="m-auto w-[610px] hover:scale-105 linear duration-300 md:w-[900px] h-[600px] object-cover lg:w-[350px] basis-[25%] lg:h-[500px]"
-                src={fuss.src}
-                alt="fussili"
-            />
-            <h6
-                class="absolute top-[1450px] left-[240px] p-5 bg-white md:left-[530px] md:top-[260px] lg:left-[1030px] lg:top-[250px]"
-            >
-                Sweet Fussili
-            </h6>
-        </div>
-    </section>
-    <section>
-        <div class="relative">
-            <img class="w-[100%] h-[750px] object-cover" src={yes.src} alt="" />
-            <div
-                class="text-center text-white absolute bottom-[150px] left-[300px] lg:left-[600px] sm:left-[80px] lg:text-2xl"
-            >
-                <p class="mb-[30px]">Are you looking for a quite place?</p>
-                <h6>MAKE YOU FEEL GOOD IS OUR PRIORITY</h6>
-                <a href="#"
-                    ><button
-                        class="border mt-[100px] bg-white text-black p-4 m-auto hover:bg-slate-500 hover:scale-x-100 linear ease-out duration-100"
-                        >READ MORE</button
-                    ></a
+</section>
+<section>
+    <div class="relative text-3xl">
+        <img class="w-[100%] h-[750px] object-cover" src={yes.src} alt="" />
+        <div
+            class="text-center  text-white absolute top-[30%] left-[30%] right-[25%] translate-x-[0%]"
+        >
+            <p class="mb-[30px] leading-relaxed">Are you looking for a quite place?</p>
+            <h6>MAKE YOU FEEL GOOD IS OUR PRIORITY</h6>
+            <a href="#"
                 >
-            </div>
+            
+            <button class="relative overflow-hidden px-6 py-3 mt-[100px] text-white font-bold rounded-lg border border-white-500 bg-transparent group">
+                <span class="absolute left-0 top-0 h-full w-0 bg-orange-500 transition-all duration-500 group-hover:w-full"></span>
+                <span class="relative z-10">BOOK A TABLE</span>
+              </button>
         </div>
-    </section>
+    </div>
+</section>
 
-    <h6 class="m-[50px] text-center text-2xl">OUR BEST RECIPES</h6>
-    <section
-        class="md:flex justify-around gap-[20px] mr-[30px] ml-[30px] lg:ml-[300px] lg:mr-[300px]"
+<h6 class="m-[50px] text-center text-2xl">OUR BEST RECIPES</h6>
+<section
+    class="md:flex justify-around gap-[20px] mr-[30px] ml-[30px] lg:ml-[300px] lg:mr-[300px]"
+>
+    <div>
+        <img
+            class="m-auto w-[450px] hover:scale-105 linear duration-300 h-[600px] object-cover lg:w-[350px] basis-[25%] lg:h-[500px]"
+            src={tomato.src}
+            alt=""
+        />
+        <a href=""
+            ><h6 class="m-[25px] text-center hover:underline text-3xl">
+                Tomato basil pasta
+            </h6></a
+        >
+        <h5 class="text-center mb-[50px]">RECIPES</h5>
+    </div>
+    <div>
+        <img
+            class="m-auto w-[450px] h-[600px] hover:scale-105 linear duration-300 object-cover lg:w-[350px] basis-[25%] lg:h-[500px]"
+            src={macchiato.src}
+            alt=""
+        />
+        <a href=""
+            ><h6 class="m-[25px] text-center hover:underline text-3xl">
+                Very cute macchiato
+            </h6></a
+        >
+        <h5 class="text-center mb-[50px]">RECIPES</h5>
+    </div>
+    <div>
+        <img
+            class="m-auto w-[450px] h-[600px] hover:scale-105 linear duration-300 object-cover lg:w-[350px] basis-[25%] lg:h-[500px]"
+            src={raspberry.src}
+            alt=""
+        />
+        <a href=""
+            ><h6 class="m-[25px] text-center hover:underline text-3xl">
+                Rustic raspberry tart
+            </h6></a
+        >
+        <h5 class="text-center mb-[50px]">HEALTHY</h5>
+    </div>
+</section>
+<section class="p-[50px]">
+    <p
+        class="p-[100px] w-full text-center bg-orange-100 shadow-custom rounded-lg"
     >
-        <div>
-            <img
-                class="m-auto w-[450px] hover:scale-105 linear duration-300 h-[600px] object-cover lg:w-[350px] basis-[25%] lg:h-[500px]"
-                src={tomato.src}
-                alt=""
-            />
-            <a href=""
-                ><h6 class="m-[25px] text-center hover:underline text-3xl">
-                    Tomato basil pasta
-                </h6></a
-            >
-            <h5 class="text-center mb-[50px]">RECIPES</h5>
-        </div>
-        <div>
-            <img
-                class="m-auto w-[450px] h-[600px] hover:scale-105 linear duration-300 object-cover lg:w-[350px] basis-[25%] lg:h-[500px]"
-                src={macchiato.src}
-                alt=""
-            />
-            <a href=""
-                ><h6 class="m-[25px] text-center hover:underline text-3xl">
-                    Very cute macchiato
-                </h6></a
-            >
-            <h5 class="text-center mb-[50px]">RECIPES</h5>
-        </div>
-        <div>
-            <img
-                class="m-auto w-[450px] h-[600px] hover:scale-105 linear duration-300 object-cover lg:w-[350px] basis-[25%] lg:h-[500px]"
-                src={raspberry.src}
-                alt=""
-            />
-            <a href=""
-                ><h6 class="m-[25px] text-center hover:underline text-3xl">
-                    Rustic raspberry tart
-                </h6></a
-            >
-            <h5 class="text-center mb-[50px]">HEALTHY</h5>
-        </div>
-    </section>
-    <section class="p-[50px]">
-        <p class="p-[100px] w-full text-center bg-orange-100">
-            This place is absolutely amazing quality served ...very <br />much
-            enjoyed this place great food great staff
-        </p>
-    </section>
+        This place is absolutely amazing quality served ...very <br />much
+        enjoyed this place great food great staff
+    </p>
+</section>
 
-    <Footer />
-</Layout>
+<Footer />
+</Layout
+>

@@ -1,8 +1,9 @@
 ---
 import "../CSS/fontawesome-free-6.7.2-web/css/all.css";
+const {Bg}=Astro.props
 ---
 
-<nav class="flex justify-around p-3">
+<nav class={Bg} class="flex justify-around p-3">
   <div class="navbar">
     <input type="checkbox" id="toggle" />
 
@@ -14,7 +15,7 @@ import "../CSS/fontawesome-free-6.7.2-web/css/all.css";
 
     <ul class="nav-list">
       <li><a href="#">Home</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="/contact">Contact</a></li>
       <li><a href="#">Menu</a></li>
       <li><a href="#">About</a></li>
     </ul>
@@ -23,12 +24,23 @@ import "../CSS/fontawesome-free-6.7.2-web/css/all.css";
     <h2 class="pl-9 text-2xl">Jack</h2>
     <h6>Restaurant&Bar</h6>
   </div>
-  <div><a href=""><i class="fa-brands fa-facebook-f"></i></a>
-  <a href=""><i class="fa-brands fa-instagram"></i></a>
-  <a href=""><i class="fa-brands fa-pinterest"></i></a> </div>
+  <div>
+  <a class="shadow-xl hover:scale-105 linear duration-300" href=""><i class="fa-brands fa-facebook-f"></i></a>
+  <a class="shadow-xl" href=""><i class="fa-brands fa-instagram"></i></a>
+  <a class="shadow-xl  " href=""><i class="fa-brands fa-pinterest"></i></a> </div>
 </nav>
 
 <style>
+
+.erste{
+  background-color: lightslategray;
+}
+.zweite{
+  background-color: var(indigo);
+}
+.dritte{
+  background-color: lightskyblue;
+}
   .navbar {
     display: flex;
     justify-content: space-around;
