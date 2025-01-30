@@ -6,17 +6,42 @@ import yes from "../assets/images/yes.jpg";
 ---
 
 <Layout>
-    <Navigation Bg="" />
+    <Navigation  />
 
     <body>
-        <div class="relative">
+        <section> <div class="relative">
             <img class="w-full object-cover h-[600px]" src={yes.src} alt="" />
             <h3 class="absolute left-[10%] bottom-[20%] text-4xl">
                 Contact Us
-            </h3>
-        </div>
+            </h3></section>
+       
+       
+        <section class="p-[20px] md:grid grid-cols-3 text-center ">
+            <div class="p-[20px] ">
+                <h6>GENERAL INQUIRIES</h6>
+               <a href="mailto:info@yourdomain.com">info@yourdomain.com</a>
+            </div>
+            <div class="p-[20px] ">
+                <h6>PRESS INQUIRIES</h6>
+               <a href="mailto:press@yourdomain.com">press@yourdomain.com</a>
+            </div>
+            <div class="p-[20px] ">
+                <h6>ORDERS INQUIRIES</h6>
+               <a href="mailto:order@yourdomain.com">order@yourdomain.com</a>
+            </div>
+            <div class="p-[20px] ">
+                <h6>CALL US</h6>
+               <a href="TEL:+1234 567 678">info@yourdomain.com</a>
+            </div>
+            <div class="p-[20px] ">
+                <h6>GENERAL INQUIRIES</h6>
+               <p>City Hall Park, New York, NY 10007</p>
+            </div>
+ 
+
+        </section>
         <section
-            class="bg-gray-100 w-full md:flex justify-between gap-[200px] min-h-screen  p-6"
+            class="bg-gray-100 w-full md:flex justify-between gap-[200px]   p-6"
         >
             <!-- Formulaire de contact -->
             <div class="w-full md:w-1/2">
@@ -107,5 +132,6 @@ import yes from "../assets/images/yes.jpg";
                 </div>
             </div>
         </section>
+        <Footer/>
     </body>
 </Layout>
