@@ -1,0 +1,103 @@
+---
+import Navigation from "../components/Navigation.astro";
+import Layout from "../layouts/Layout.astro";
+import Footer from "../components/Footer.astro";
+import restaurant from "../assets/images/restaurant.avif";
+import photo from "../assets/images/photo.avif";
+import un from "../assets/images/un.avif";
+import "../CSS/font.css";
+import deux from "../assets/images/deux.avif";
+import drei from "../assets/images/drei.avif";
+import vier from "../assets/images/vier.webp";
+---
+
+<Layout>
+    <Navigation />
+
+    <body>
+        <section>
+            <div class="relative">
+                <img
+                    class="w-full object-cover h-[600px]"
+                    src={restaurant.src}
+                    alt=""
+                />
+                <h3
+                    class="absolute left-[10%] bottom-[20%] text-white text-4xl"
+                >
+                    About Us
+                </h3>
+            </div>
+        </section>
+        <section
+            class="grid grid-cols-1 items-center w-[90%] h-[650px] p-[90px] sm:grid-cols-2 gap-[100px]"
+        >
+            <img
+                class="w-[950px] h-[500px] object-cover"
+                src={photo.src}
+                alt="ein photo"
+            />
+            <div>
+                <h4>SINCE 2002</h4>
+                <p class="text-2xl w-full loading-relaxed">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Nostrum, quaerat provident illum, porro corrupti quasi
+                    exercitationem et nemo molestias culpa deserunt, illo in
+                    beatae fuga earum incidunt? Debitis aut earum quo illo ipsum
+                    voluptatem eaque deserunt accusamus
+                </p>
+            </div>
+        </section>
+        <section class="grid grid-cols-2 gap-10 p-[20px]">
+            <img class="w-full p-6 object-cover" src={un.src} alt="photo" />
+            <img class="w-full object-cover" src={deux.src} alt="" />
+        </section>
+        <section
+            class="grid grid-cols-1 items-center w-[90%] h-[650px] p-[90px] sm:grid-cols-2 gap-[100px]"
+        >
+            <div>
+                <h4>SINCE 2002</h4>
+                <p class="text-2xl w-full loading-relaxed">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Nostrum, quaerat provident illum, porro corrupti quasi
+                    exercitationem et nemo molestias culpa deserunt, illo in
+                    beatae fuga earum incidunt? Debitis aut earum quo illo ipsum
+                    voluptatem eaque deserunt accusamus
+                </p>
+                <button
+                    class="relative overflow-hidden px-8 py-4 mt-8 text-white font-bold rounded-lg border border-white-500 bg-transparent group"
+                >
+                    <span
+                        class="absolute left-0 top-0 h-full w-0 bg-orange-500 transition-all duration-500 group-hover:w-full"
+                    ></span>
+                    <span class="relative text-black z-10">BOOK A TABLE</span>
+                </button>
+            </div>
+
+            <img
+                class="w-[950px] h-[500px] object-cover"
+                src={drei.src}
+                alt="ein photo"
+            />
+        </section>
+        <section>
+            <div class="m-[40px]">
+                <img
+                    class="w-full h-[700px] object-cover"
+                    src={vier.src}
+                    alt="photo"
+                />
+            </div>
+            <div class="text-center w-full md:mw-[500px] lg:mw-[600px]">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Commodi iure repellendus doloribus nobis, culpa ullam fugit
+                    eos magnam soluta et dignissimos ad repellat ipsam deleniti
+                    porro sint, mollitia voluptate reiciendis adipisci eaque
+                    inventore delectus. At nemo veniam officiis possimus nulla
+                    quibusdam, perferendis
+                </p>
+            </div>
+        </section>
+    </body></Layout
+>
