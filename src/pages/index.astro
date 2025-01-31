@@ -23,7 +23,7 @@ import "../CSS/font.css";
     <Navigation />
     <section class="relative">
         <img 
-            class="image w-full object-cover h-[600px]"
+            class="image w-full md:w-full sm:w-full object-cover h-[600px]"
             src={ess.src}
             alt="esen photo"
         />
@@ -63,19 +63,19 @@ import "../CSS/font.css";
     
 <section class="grid grid-cols-1 md:grid-cols-2  mt-6 h-auto p-4">
     <div class="relative">
-        <img src={apper.src} alt="Aperitifs" class="w-full h-full  hover:scale-105 linear duration-300 object-cover">
+        <img src={apper.src} alt="Aperitifs" class=" md:w-full md:h-full sm:w-full sm:h-[400px] hover:scale-105 linear duration-300 object-cover">
         <span class="absolute bottom-[40%] left-4 text-white text-lg font-bold">APÉRITIFS</span>
     </div>
     <div class="relative">
-        <img src={drink.src} alt="Drinks" class="w-full h-full hover:scale-105 linear duration-300 object-cover ">
+        <img src={drink.src} alt="Drinks" class="md:w-full md:h-full sm:w-full sm:h-[400px] hover:scale-105 linear duration-300 object-cover ">
         <span class="absolute bottom-[40%] left-4 text-white text-lg font-bold">DRINKS</span>
     </div>
     <div class="relative">
-        <img src={dessert.src} alt="Desserts" class="w-full hover:scale-105 linear duration-300 h-[650px] object-cover ">
+        <img src={dessert.src} alt="Desserts" class="md:w-full sm:w-full sm:h-[400px] hover:scale-105 linear duration-300 h-[650px] object-cover ">
         <span class="absolute bottom-[40%] left-4 text-white text-lg font-bold">DESSERTS</span>
     </div>
     <div class="relative">
-        <img src={breakfast.src} alt="Breakfast" class="w-full hover:scale-105 linear duration-300 h-full object-cover ">
+        <img src={breakfast.src} alt="Breakfast" class="md:w-full sm:w-full sm:h-[400px] hover:scale-105 linear duration-300 h-full object-cover ">
         <span class="absolute bottom-[40%] left-4 text-white text-lg font-bold">BREAKFAST</span>
     </div>
 </section>
@@ -122,7 +122,7 @@ import "../CSS/font.css";
 </section>
 <section>
     <div class="relative text-3xl">
-        <img class="w-full h-[750px]  md:w-full object-cover" src={yes.src} alt="" />
+        <img class="w-full h-[750px] sm:w-full md:w-full object-cover" src={yes.src} alt="" />
         <div
             class="text-center  text-white absolute top-[30%] left-[30%] right-[25%] translate-x-[0%]"
         >
@@ -145,7 +145,7 @@ import "../CSS/font.css";
 >
     <div>
         <img
-            class="m-auto w-[450px] hover:scale-105 linear duration-300 h-[600px] object-cover lg:w-[350px] basis-[25%] lg:h-[500px]"
+            class="m-auto w-[450px]  sm:text-center hover:scale-105 linear duration-300 h-[600px] object-cover lg:w-[350px] basis-[25%] lg:h-[500px]"
             src={tomato.src}
             alt=""
         />
@@ -158,12 +158,12 @@ import "../CSS/font.css";
     </div>
     <div>
         <img
-            class="m-auto w-[450px] h-[600px] hover:scale-105 linear duration-300 object-cover lg:w-[350px] basis-[25%] lg:h-[500px]"
+            class="m-auto w-[450px] sm:text-center h-[600px] hover:scale-105 linear duration-300 object-cover lg:w-[350px] basis-[25%] lg:h-[500px]"
             src={macchiato.src}
             alt=""
         />
         <a href=""
-            ><h6 class="m-[25px] text-center hover:underline text-3xl">
+            ><h6 class="m-[25px]  text-center hover:underline text-3xl">
                 Very cute macchiato
             </h6></a
         >
@@ -171,7 +171,7 @@ import "../CSS/font.css";
     </div>
     <div>
         <img
-            class="m-auto w-[450px] h-[600px] hover:scale-105 linear duration-300 object-cover lg:w-[350px] basis-[25%] lg:h-[500px]"
+            class="m-auto w-[450px] sm:text-center h-[600px] hover:scale-105 linear duration-300 object-cover lg:w-[350px] basis-[25%] lg:h-[500px]"
             src={raspberry.src}
             alt=""
         />
