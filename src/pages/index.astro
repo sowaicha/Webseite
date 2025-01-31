@@ -23,11 +23,11 @@ import "../CSS/font.css";
     <Navigation />
     <section class="relative">
         <img 
-            class="image w-[100vw] object-cover h-[600px]"
+            class="image w-full object-cover h-[600px]"
             src={ess.src}
             alt="esen photo"
         />
-        <div class="m-auto text-white absolute top-[40%] left-[30%] right-[30%]">
+        <div class="m-auto text-white absolute top-[40%] left-[30%] right-[30%] lg:top-[50%] sm:top-[54%] sm:left-[35%] ">
             <h6 class="text-lg md:text-2xl absolute bottom-[90%] left-[33%] right-[30%] ">welcome to Jack</h6>
             <h3 class="text-3xl md:text-5xl font-bold lg:text-center">
                 Restaurant&Bar
@@ -61,7 +61,7 @@ import "../CSS/font.css";
     </div>
 </section>
     
-<section class="grid grid-cols-1 sm:grid-cols-2  mt-6 h-auto p-4">
+<section class="grid grid-cols-1 md:grid-cols-2  mt-6 h-auto p-4">
     <div class="relative">
         <img src={apper.src} alt="Aperitifs" class="w-full h-full  hover:scale-105 linear duration-300 object-cover">
         <span class="absolute bottom-[40%] left-4 text-white text-lg font-bold">APÉRITIFS</span>
@@ -88,19 +88,19 @@ import "../CSS/font.css";
 </div></section>
 
 
-<section class="m-auto md:flex w-[70vw] justify-around gap-4 mb-[30px]">
+<section class=" w-full  mb-[60px] sm:ml-3.5 grid grid-cols-1 md:grid-cols-3  md:m-auto md:mb-6 md:w[20%]  lg:w-[70%] lg:m-auto lg:mb-11">
     <div
-        class="relative flex justify-center items-center w-[610px] h-[600px] md:w-[900px] hover:scale-105 linear duration-300 lg:w-[350px] lg:h-[500px]"
+        class="relative flex justify-center items-center w-[610px] h-[600px] md:w-[300px] hover:scale-105 linear duration-300 lg:w-[350px] lg:h-[500px]"
     >
         <img
-            class="absolute top-0 left-0 bottom-0 right-0 z-[-1] h-full object-cover"
+            class="absolute md:w-[500px] top-0 left-0 bottom-0 right-0 z-[-1] h-full object-cover"
             src={pasta.src}
             alt=""
         />
         <h6 class="bg-white p-5">Pasta Carbona</h6>
     </div>
     <div
-        class="relative flex justify-center items-center w-[610px] h-[600px] md:w-[900px] hover:scale-105 linear duration-300 lg:w-[350px] lg:h-[500px]"
+        class="relative flex justify-center sm:pl-4 items-center w-[610px] h-[600px] md:w-[300px] hover:scale-105 linear duration-300 lg:w-[350px] lg:h-[500px]"
     >
         <img
             class="absolute top-0 left-0 bottom-0 right-0 z-[-1] h-full object-cover"
@@ -110,7 +110,7 @@ import "../CSS/font.css";
         <h6 class="bg-white p-5">Red Dessert</h6>
     </div>
     <div
-        class="relative flex justify-center items-center w-[610px] h-[600px] md:w-[900px] hover:scale-105 linear duration-300 lg:w-[350px] lg:h-[500px]"
+        class="relative flex justify-center items-center w-[610px] h-[600px] md:w-[300px] hover:scale-105 linear duration-300 lg:w-[350px] lg:h-[500px]"
     >
         <img
             class="absolute top-0 left-0 bottom-0 right-0 z-[-1] h-full object-cover"
@@ -122,7 +122,7 @@ import "../CSS/font.css";
 </section>
 <section>
     <div class="relative text-3xl">
-        <img class="w-[100%] h-[750px] object-cover" src={yes.src} alt="" />
+        <img class="w-full h-[750px]  md:w-full object-cover" src={yes.src} alt="" />
         <div
             class="text-center  text-white absolute top-[30%] left-[30%] right-[25%] translate-x-[0%]"
         >

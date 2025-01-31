@@ -30,7 +30,7 @@ import vier from "../assets/images/vier.webp";
             </div>
         </section>
         <section
-            class="grid grid-cols-1 items-center w-[90%] h-[650px] p-[90px] sm:grid-cols-2 gap-[100px]"
+            class="grid md:grid-cols-2 md:gap-[20px] items-center w-[90%] h-[650px] p-[90px] lg:grid-cols-2 lg:gap-[40px] sm:grid-cols-1 gap-[00px]"
         >
             <img
                 class="w-[950px] h-[500px] object-cover"
@@ -39,21 +39,22 @@ import vier from "../assets/images/vier.webp";
             />
             <div>
                 <h4>SINCE 2002</h4>
-                <p class="text-2xl w-full loading-relaxed">
+                <p class="text-2xl w-full md: loading-relaxed">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Nostrum, quaerat provident illum, porro corrupti quasi
                     exercitationem et nemo molestias culpa deserunt, illo in
-                    beatae fuga earum incidunt? Debitis aut earum quo illo ipsum
-                    voluptatem eaque deserunt accusamus
+                    beatae fuga earum incidunt?
                 </p>
             </div>
         </section>
-        <section class="grid grid-cols-2 gap-10 p-[20px]">
+        <section
+            class="grid md:grid-cols-2  sm:mt-[200px] md:mt-[50px] gap-10 p-[20px] sm:grid-cols-1 lg:grid-cols-2 lg:gap-[40px]"
+        >
             <img class="w-full p-6 object-cover" src={un.src} alt="photo" />
             <img class="w-full object-cover" src={deux.src} alt="" />
         </section>
         <section
-            class="grid grid-cols-1 items-center w-[90%] h-[650px] p-[90px] sm:grid-cols-2 gap-[100px]"
+            class="grid md:grid-cols-2 md:mt-[50px] items-center w-[90%] h-[650px] p-[90px] sm:grid-cols-1 lg:grid-cols-2 lg:gap-[40px] gap-[100px]"
         >
             <div>
                 <h4>SINCE 2002</h4>
@@ -61,8 +62,7 @@ import vier from "../assets/images/vier.webp";
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Nostrum, quaerat provident illum, porro corrupti quasi
                     exercitationem et nemo molestias culpa deserunt, illo in
-                    beatae fuga earum incidunt? Debitis aut earum quo illo ipsum
-                    voluptatem eaque deserunt accusamus
+                    beatae fuga earum incidunt?
                 </p>
                 <button
                     class="relative overflow-hidden px-8 py-4 mt-8 text-white font-bold rounded-lg border border-white-500 bg-transparent group"
@@ -73,14 +73,15 @@ import vier from "../assets/images/vier.webp";
                     <span class="relative text-black z-10">BOOK A TABLE</span>
                 </button>
             </div>
-
-            <img
-                class="w-[950px] h-[500px] object-cover"
-                src={drei.src}
-                alt="ein photo"
-            />
+            <div>
+                <img
+                    class="w-[950px] h-[500px] object-cover"
+                    src={drei.src}
+                    alt="ein photo"
+                />
+            </div>
         </section>
-        <section>
+        <section class=" sm:mt-[430px]  md:mt-[40px] ">
             <div class="m-[40px]">
                 <img
                     class="w-full h-[700px] object-cover"
@@ -88,14 +89,12 @@ import vier from "../assets/images/vier.webp";
                     alt="photo"
                 />
             </div>
-            <div class="text-center w-full md:mw-[500px] lg:mw-[600px]">
-                <p>
+            <div class=" m-auto w-[60%] ">
+                <p class="text-center">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Commodi iure repellendus doloribus nobis, culpa ullam fugit
                     eos magnam soluta et dignissimos ad repellat ipsam deleniti
-                    porro sint, mollitia voluptate reiciendis adipisci eaque
-                    inventore delectus. At nemo veniam officiis possimus nulla
-                    quibusdam, perferendis
+                    porro sint solute magnam
                 </p>
             </div>
         </section>
