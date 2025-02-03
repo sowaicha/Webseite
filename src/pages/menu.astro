@@ -22,7 +22,7 @@ import Instagram from "../components/Instagram.astro";
       <h3 class="absolute left-[10%] bottom-[20%] text-white text-4xl">Menu</h3>
     </div>
   </section>
-  <section class="max-w-4xl mx-auto py-12 px-4">
+  <section class="max-w-4xl m-auto py-12 px-4">
     <h2 class="text-center text-3xl font-serif font-bold mb-6">Breakfast</h2>
     <p class="text-center text-gray-500 mb-8">DAILY 11:00 AM - 01:00 PM</p>
 
@@ -123,12 +123,12 @@ import Instagram from "../components/Instagram.astro";
     class="grid grid-cols-1 gap-12 mb-[00px] sm:m-auto md:grid-cols-2 w-[90%]"
   >
     <img
-      class="md:w-[1000px] md:h-[500px] object-cover"
+      class="md:w-[1000px] text-center md:h-[500px] object-cover"
       src={apple.src}
       alt=""
     />
     <img
-      class="md:w-[1000px] md:h-[500px] object-cover"
+      class="md:w-[1000px]  md:h-[500px] object-cover"
       src={edbeere.src}
       alt=""
     />
@@ -261,12 +261,12 @@ import Instagram from "../components/Instagram.astro";
     class="grid grid-cols-1 gap-12 mb-[00px] sm:m-auto md:grid-cols-2 w-[90%]"
   >
     <img
-      class="md:w-[1000px] md:h-[500px] object-cover"
+      class="md:w-[1000px] sm:w-[650px] md:h-[500px] object-cover"
       src={link.src}
       alt=""
     />
     <img
-      class="md:w-[1000px] md:h-[500px] object-cover"
+      class="md:w-[1000px] sm:w-[650px] md:h-[500px] object-cover"
       src={recht.src}
       alt=""
     />
@@ -274,7 +274,7 @@ import Instagram from "../components/Instagram.astro";
   <section class="max-w-4xl mx-auto py-12 px-4">
     <h2 class="text-center text-3xl font-serif font-bold mb-6">Dinner</h2>
     <p class="text-center text-gray-500 mb-8">
-      SERVED DAILY FROM  06:00 PM TILL CLOSE
+      SERVED DAILY FROM 06:00 PM TILL CLOSE
     </p>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -401,17 +401,19 @@ import Instagram from "../components/Instagram.astro";
     class="grid grid-cols-1 gap-12 mb-[00px] sm:m-auto md:grid-cols-2 w-[90%]"
   >
     <img
-      class="md:w-[1000px] md:h-[550px]  object-cover"
+      class="md:w-[1000px] md:h-[550px] object-cover"
       src={dinner2.src}
       alt=""
     />
-    <img class="md:w-[1000px] md:h-[550px] object-center object-cover" src={din.src} alt="" />
+    <img
+      class="md:w-[1000px] md:h-[550px] object-center object-cover"
+      src={din.src}
+      alt=""
+    />
   </section>
   <section class="max-w-4xl mx-auto py-12 px-4">
     <h2 class="text-center text-3xl font-serif font-bold mb-6">Desserts</h2>
-    <p class="text-center text-gray-500 mb-8">
-      SERVED DAILY 
-    </p>
+    <p class="text-center text-gray-500 mb-8">SERVED DAILY</p>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
       <!-- gauche-->
@@ -536,13 +538,13 @@ import Instagram from "../components/Instagram.astro";
   <section
     class="grid grid-cols-1 gap-12 pb-[100px] sm:m-auto md:grid-cols-2 w-[90%]"
   >
+    <img class="md:w-[1000px] md:h-[500px] object-cover" src={ami.src} alt="" />
     <img
-      class="md:w-[1000px] md:h-[500px] object-cover"
-      src={ami.src}
+      class="md:w-[1000px] sm:w-[650px] md:h-[500px] object-cover"
+      src={copain.src}
       alt=""
     />
-    <img class="md:w-[1000px] md:h-[500px] object-cover" src={copain.src} alt="" />
   </section>
-  <Instagram/>
-  <Footer/>
+  <Instagram />
+  <Footer />
 </Layout>

@@ -23,13 +23,19 @@ import "../CSS/font.css";
 <Layout>
     <Navigation />
     <section class="relative">
-        <img 
+        <img
             class="image w-full md:w-full sm:w-full object-cover h-[600px]"
             src={ess.src}
             alt="esen photo"
         />
-        <div class="m-auto text-white absolute top-[40%] left-[30%] right-[30%] lg:top-[50%] sm:top-[54%] sm:left-[35%] ">
-            <h6 class="text-lg md:text-2xl absolute bottom-[90%] left-[33%] right-[30%] ">welcome to Jack</h6>
+        <div
+            class="m-auto text-white absolute top-[40%] left-[30%] right-[30%] lg:top-[50%] sm:top-[54%] sm:left-[35%]"
+        >
+            <h6
+                class="text-lg md:text-2xl absolute bottom-[90%] left-[33%] right-[30%]"
+            >
+                welcome to Jack
+            </h6>
             <h3 class="text-3xl md:text-5xl font-bold lg:text-center">
                 Restaurant&Bar
             </h3>
@@ -47,153 +53,203 @@ import "../CSS/font.css";
         </div> -->
     </section>
 
-    <section><div class="text-center">
-        <p class="w-[600px] text-4xl pt-[50px] pb-[60px] m-auto">
-            Food, in the end in our own tradition ,is something holy.It's not
-            about nutriients and calories .It's about sharing . It's about
-            honesty .It's about identity
-        </p>
-        <a href="#"
-            > <button class="relative overflow-hidden px-8 py-4  text-white font-bold rounded-lg border border-white-500 bg-transparent group">
-                <span class="absolute left-0 top-0 h-full w-0 bg-orange-500 transition-all duration-500 group-hover:w-full"></span>
-                <span class="relative  text-black z-10">READ-MORE</span>
-              </button>
-        
-    </div>
-</section>
-    
-<section class="grid grid-cols-1 md:grid-cols-2  mt-6 h-auto p-4">
-    <div class="relative">
-        <img src={apper.src} alt="Aperitifs" class=" md:w-full md:h-full sm:w-full sm:h-[400px] hover:scale-105 linear duration-300 object-cover">
-        <span class="absolute bottom-[40%] left-4 text-white text-lg font-bold">APÉRITIFS</span>
-    </div>
-    <div class="relative">
-        <img src={drink.src} alt="Drinks" class="md:w-full md:h-full sm:w-full sm:h-[400px] hover:scale-105 linear duration-300 object-cover ">
-        <span class="absolute bottom-[40%] left-4 text-white text-lg font-bold">DRINKS</span>
-    </div>
-    <div class="relative">
-        <img src={dessert.src} alt="Desserts" class="md:w-full sm:w-full sm:h-[400px] hover:scale-105  lg:h-[600px] linear duration-300 h-[650px] object-cover ">
-        <span class="absolute bottom-[40%] left-4 text-white text-lg font-bold">DESSERTS</span>
-    </div>
-    <div class="relative">
-        <img src={breakfast.src} alt="Breakfast" class="md:w-full sm:w-full sm:h-[400px] lg:h-[600px] hover:scale-105 linear duration-300 h-full object-cover ">
-        <span class="absolute bottom-[40%] left-4 text-white text-lg font-bold">BREAKFAST</span>
-    </div>
-</section>
-<section>
-    <div class="w-[600px] text-center pt-[60px] pb-[60px] m-auto">
-    <h6 class="text-2xl mb-4">OUR SPECIALS</h6>
-    <p>
-        Good Food starts with good ingridients .<br /> We only bring you the best.
-    </p>
-</div></section>
-
-
-<section class=" w-full  mb-[60px] sm:ml-3.5 grid grid-cols-1 md:grid-cols-3  md:m-auto md:mb-6 md:w[20%]  lg:w-[70%] lg:m-auto lg:mb-11">
-    <div
-        class="relative flex justify-center items-center w-[610px] h-[600px] md:w-[300px] hover:scale-105 linear duration-300 lg:w-[350px] lg:h-[500px]"
-    >
-        <img
-            class="absolute md:w-[500px] top-0 left-0 bottom-0 right-0 z-[-1] h-full object-cover"
-            src={pasta.src}
-            alt=""
-        />
-        <h6 class="bg-white p-5">Pasta Carbona</h6>
-    </div>
-    <div
-        class="relative flex justify-center sm:pl-4 items-center w-[610px] h-[600px] md:w-[300px] hover:scale-105 linear duration-300 lg:w-[350px] lg:h-[500px]"
-    >
-        <img
-            class="absolute top-0 left-0 bottom-0 right-0 z-[-1] h-full object-cover"
-            src={red.src}
-            alt="dessert"
-        />
-        <h6 class="bg-white p-5">Red Dessert</h6>
-    </div>
-    <div
-        class="relative flex justify-center items-center w-[610px] h-[600px] md:w-[300px] hover:scale-105 linear duration-300 lg:w-[350px] lg:h-[500px]"
-    >
-        <img
-            class="absolute top-0 left-0 bottom-0 right-0 z-[-1] h-full object-cover"
-            src={fuss.src}
-            alt="fussili"
-        />
-        <h6 class="bg-white p-5">Sweet Fussili</h6>
-    </div>
-</section>
-<section>
-    <div class="relative text-3xl">
-        <img class="w-full h-[750px] sm:w-full md:w-full object-cover" src={yes.src} alt="" />
-        <div
-            class="text-center  text-white absolute top-[30%] left-[30%] right-[25%] translate-x-[0%]"
-        >
-            <p class="mb-[30px] leading-relaxed">Are you looking for a quite place?</p>
-            <h6>MAKE YOU FEEL GOOD IS OUR PRIORITY</h6>
-            <a href="#"
+    <section>
+        <div class="text-center">
+            <p class="w-[600px] text-4xl pt-[50px] pb-[60px] m-auto">
+                Food, in the end in our own tradition ,is something holy.It's
+                not about nutriients and calories .It's about sharing . It's
+                about honesty .It's about identity
+            </p>
+            <a href="#">
+                <button
+                    class="relative overflow-hidden px-8 py-4 text-white font-bold rounded-lg border border-white-500 bg-transparent group"
                 >
-            
-            <button class="relative overflow-hidden px-6 py-3 mt-[100px] text-white font-bold rounded-lg border border-white-500 bg-transparent group">
-                <span class="absolute left-0 top-0 h-full w-0 bg-orange-500 transition-all duration-500 group-hover:w-full"></span>
-                <span class="relative z-10">BOOK A TABLE</span>
-              </button>
+                    <span
+                        class="absolute left-0 top-0 h-full w-0 bg-orange-500 transition-all duration-500 group-hover:w-full"
+                    ></span>
+                    <span class="relative text-black z-10">READ-MORE</span>
+                </button>
+            </a>
         </div>
-    </div>
-</section>
 
-<h6 class="m-[50px] text-center text-2xl">OUR BEST RECIPES</h6>
-<section
-    class="md:flex justify-around gap-[20px] mr-[30px] ml-[30px] lg:ml-[300px] lg:mr-[300px]"
->
-    <div>
-        <img
-            class="m-auto w-[450px]  sm:text-center hover:scale-105 linear duration-300 h-[600px] object-cover lg:w-[350px] basis-[25%] lg:h-[500px]"
-            src={tomato.src}
-            alt=""
-        />
-        <a href=""
-            ><h6 class="m-[25px] text-center hover:underline text-3xl">
-                Tomato basil pasta
-            </h6></a
-        >
-        <h5 class="text-center mb-[50px]">RECIPES</h5>
-    </div>
-    <div>
-        <img
-            class="m-auto w-[450px] sm:text-center h-[600px] hover:scale-105 linear duration-300 object-cover lg:w-[350px] basis-[25%] lg:h-[500px]"
-            src={macchiato.src}
-            alt=""
-        />
-        <a href=""
-            ><h6 class="m-[25px]  text-center hover:underline text-3xl">
-                Very cute macchiato
-            </h6></a
-        >
-        <h5 class="text-center mb-[50px]">RECIPES</h5>
-    </div>
-    <div>
-        <img
-            class="m-auto w-[450px] sm:text-center h-[600px] hover:scale-105 linear duration-300 object-cover lg:w-[350px] basis-[25%] lg:h-[500px]"
-            src={raspberry.src}
-            alt=""
-        />
-        <a href=""
-            ><h6 class="m-[25px] text-center hover:underline text-3xl">
-                Rustic raspberry tart
-            </h6></a
-        >
-        <h5 class="text-center mb-[50px]">HEALTHY</h5>
-    </div>
-</section>
-<section class="p-[50px]">
-    <p
-        class="p-[100px] w-full text-center bg-orange-100 shadow-custom rounded-lg"
-    >
-        This place is absolutely amazing quality served ...very <br />much
-        enjoyed this place great food great staff
-    </p>
-</section>
-<Instagram/>
+        <section class="grid grid-cols-1 md:grid-cols-2 mt-6 h-auto p-4">
+            <div class="relative">
+                <img
+                    src={apper.src}
+                    alt="Aperitifs"
+                    class="md:w-full md:h-full sm:w-full sm:h-[400px] hover:scale-105 linear duration-300 object-cover"
+                />
+                <span
+                    class="absolute bottom-[40%] left-4 text-white text-lg font-bold"
+                    >APÉRITIFS</span
+                >
+            </div>
+            <div class="relative">
+                <img
+                    src={drink.src}
+                    alt="Drinks"
+                    class="md:w-full md:h-full sm:w-full sm:h-[400px] hover:scale-105 linear duration-300 object-cover"
+                />
+                <span
+                    class="absolute bottom-[40%] left-4 text-white text-lg font-bold"
+                    >DRINKS</span
+                >
+            </div>
+            <div class="relative">
+                <img
+                    src={dessert.src}
+                    alt="Desserts"
+                    class="md:w-full sm:w-full sm:h-[400px] hover:scale-105 lg:h-[600px] linear duration-300 h-[650px] object-cover"
+                />
+                <span
+                    class="absolute bottom-[40%] left-4 text-white text-lg font-bold"
+                    >DESSERTS</span
+                >
+            </div>
+            <div class="relative">
+                <img
+                    src={breakfast.src}
+                    alt="Breakfast"
+                    class="md:w-full sm:w-full sm:h-[400px] lg:h-[600px] hover:scale-105 linear duration-300 h-full object-cover"
+                />
+                <span
+                    class="absolute bottom-[40%] left-4 text-white text-lg font-bold"
+                    >BREAKFAST</span
+                >
+            </div>
+        </section>
+        <section>
+            <div class="w-[600px] text-center pt-[60px] pb-[60px] m-auto">
+                <h6 class="text-2xl mb-4">OUR SPECIALS</h6>
+                <p>
+                    Good Food starts with good ingridients .<br /> We only bring
+                    you the best.
+                </p>
+            </div>
+        </section>
 
-<Footer />
-</Layout
+        <section
+            class="w-full mb-[60px] sm:ml-3.5 grid grid-cols-1 md:grid-cols-3 md:m-auto md:mb-6 md:w[20%] lg:w-[70%] lg:m-auto lg:mb-11"
+        >
+            <div
+                class="relative flex justify-center items-center w-[610px] h-[600px] md:w-[300px] hover:scale-105 linear duration-300 lg:w-[350px] lg:h-[500px]"
+            >
+                <img
+                    class="absolute md:w-[500px] top-0 left-0 bottom-0 right-0 z-[-1] h-full object-cover"
+                    src={pasta.src}
+                    alt=""
+                />
+                <h6 class="bg-white p-5">Pasta Carbona</h6>
+            </div>
+            <div
+                class="relative flex justify-center sm:pl-4 items-center w-[610px] h-[600px] md:w-[300px] hover:scale-105 linear duration-300 lg:w-[350px] lg:h-[500px]"
+            >
+                <img
+                    class="absolute top-0 left-0 bottom-0 right-0 z-[-1] h-full object-cover"
+                    src={red.src}
+                    alt="dessert"
+                />
+                <h6 class="bg-white p-5">Red Dessert</h6>
+            </div>
+            <div
+                class="relative flex justify-center items-center w-[610px] h-[600px] md:w-[300px] hover:scale-105 linear duration-300 lg:w-[350px] lg:h-[500px]"
+            >
+                <img
+                    class="absolute top-0 left-0 bottom-0 right-0 z-[-1] h-full object-cover"
+                    src={fuss.src}
+                    alt="fussili"
+                />
+                <h6 class="bg-white p-5">Sweet Fussili</h6>
+            </div>
+        </section>
+        <section>
+            <div class="relative text-3xl">
+                <img
+                    class="w-full h-[750px] sm:w-full md:w-full object-cover"
+                    src={yes.src}
+                    alt=""
+                />
+                <div
+                    class="text-center text-white absolute top-[30%] left-[30%] right-[25%] translate-x-[0%]"
+                >
+                    <p class="mb-[30px] leading-relaxed">
+                        Are you looking for a quite place?
+                    </p>
+                    <h6>MAKE YOU FEEL GOOD IS OUR PRIORITY</h6>
+                    <a href="#">
+                        <button
+                            class="relative overflow-hidden px-6 py-3 mt-[100px] text-white font-bold rounded-lg border border-white-500 bg-transparent group"
+                        >
+                            <span
+                                class="absolute left-0 top-0 h-full w-0 bg-orange-500 transition-all duration-500 group-hover:w-full"
+                            ></span>
+                            <span class="relative z-10">BOOK A TABLE</span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            <h6 class="m-[50px] text-center text-2xl">OUR BEST RECIPES</h6>
+            <section
+                class="md:flex justify-around gap-[20px] mr-[30px] ml-[30px] lg:ml-[300px] lg:mr-[300px]"
+            >
+                <div>
+                    <img
+                        class="m-auto w-[450px] sm:text-center hover:scale-105 linear duration-300 h-[600px] object-cover lg:w-[350px] basis-[25%] lg:h-[500px]"
+                        src={tomato.src}
+                        alt=""
+                    />
+                    <a href=""
+                        ><h6
+                            class="m-[25px] text-center hover:underline text-3xl"
+                        >
+                            Tomato basil pasta
+                        </h6></a
+                    >
+                    <h5 class="text-center mb-[50px]">RECIPES</h5>
+                </div>
+                <div>
+                    <img
+                        class="m-auto w-[450px] sm:text-center h-[600px] hover:scale-105 linear duration-300 object-cover lg:w-[350px] basis-[25%] lg:h-[500px]"
+                        src={macchiato.src}
+                        alt=""
+                    />
+                    <a href=""
+                        ><h6
+                            class="m-[25px] text-center hover:underline text-3xl"
+                        >
+                            Very cute macchiato
+                        </h6></a
+                    >
+                    <h5 class="text-center mb-[50px]">RECIPES</h5>
+                </div>
+                <div>
+                    <img
+                        class="m-auto w-[450px] sm:text-center h-[600px] hover:scale-105 linear duration-300 object-cover lg:w-[350px] basis-[25%] lg:h-[500px]"
+                        src={raspberry.src}
+                        alt=""
+                    />
+                    <a href=""
+                        ><h6
+                            class="m-[25px] text-center hover:underline text-3xl"
+                        >
+                            Rustic raspberry tart
+                        </h6></a
+                    >
+                    <h5 class="text-center mb-[50px]">HEALTHY</h5>
+                </div>
+            </section>
+            <section class="p-[50px]">
+                <p
+                    class="p-[100px] w-full text-center bg-orange-100 shadow-custom rounded-lg"
+                >
+                    This place is absolutely amazing quality served ...very <br
+                    />much enjoyed this place great food great staff
+                </p>
+            </section>
+            <Instagram />
+
+            <Footer />
+        </section>
+    </section></Layout
 >

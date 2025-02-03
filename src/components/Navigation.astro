@@ -1,6 +1,6 @@
 ---
 import "../CSS/fontawesome-free-6.7.2-web/css/all.css";
-const {Bg}=Astro.props
+const { Bg } = Astro.props;
 ---
 
 <nav class={Bg} class="flex justify-around p-3">
@@ -14,33 +14,40 @@ const {Bg}=Astro.props
     </label>
 
     <ul class="nav-list">
-      <li><a href="#">Home</a></li>
+      <li><a href="/index">Home</a></li>
       <li><a href="/contact">Contact</a></li>
       <li><a href="/menu">Menu</a></li>
       <li><a href="/about">About</a></li>
     </ul>
   </div>
-  <div >
+  <div>
     <h2 class="pl-9 text-2xl">Jack</h2>
     <h6>Restaurant&Bar</h6>
   </div>
   <div>
-  <a class="shadow-xl hover:scale-105 linear duration-300" href="https://de-de.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
-  <a class="shadow-xl" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-  <a class="shadow-xl  " href="https://de.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a></div>
+    <a
+      class="shadow-xl hover:scale-105 linear duration-300"
+      href="https://de-de.facebook.com/"
+      ><i class="fa-brands fa-facebook-f"></i></a
+    >
+    <a class="shadow-xl" href="https://www.instagram.com/"
+      ><i class="fa-brands fa-instagram"></i></a
+    >
+    <a class="shadow-xl" href="https://de.pinterest.com/"
+      ><i class="fa-brands fa-pinterest"></i></a>
+  </div>
 </nav>
 
 <style>
-
-.erste{
-  background-color: lightslategray;
-}
-.zweite{
-  background-color: var(indigo);
-}
-.dritte{
-  background-color: lightskyblue;
-}
+  .erste {
+    background-color: lightslategray;
+  }
+  .zweite {
+    background-color: var(indigo);
+  }
+  .dritte {
+    background-color: lightskyblue;
+  }
   .navbar {
     display: flex;
     justify-content: space-around;
@@ -72,7 +79,7 @@ const {Bg}=Astro.props
     display: none;
     flex-direction: column;
     list-style: none;
-    background-color:rgb(243, 221, 221);
+    background-color: rgb(243, 221, 221);
     position: absolute;
     top: 50px;
     left: 0;
@@ -80,7 +87,6 @@ const {Bg}=Astro.props
     text-align: center;
     z-index: 20;
     opacity: 0.6;
-    
   }
 
   .nav-list li {
@@ -109,10 +115,9 @@ const {Bg}=Astro.props
   #toggle:checked + .menu-toggle span:nth-child(3) {
     transform: rotate(-35deg) translate(5px, -5px);
   }
-  i{
+  i {
     font-size: 23px;
     margin-left: 10px;
     padding-top: 18px;
-   
   }
 </style>
