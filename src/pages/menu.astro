@@ -1,0 +1,548 @@
+---
+import Navigation from "../components/Navigation.astro";
+import Layout from "../layouts/Layout.astro";
+import Footer from "../components/Footer.astro";
+import menu from "../assets/images/menu.avif";
+import edbeere from "../assets/images/edbeere.avif";
+import apple from "../assets/images/apple.avif";
+import link from "../assets/images/link.avif";
+import recht from "../assets/images/recht.avif";
+import din from "../assets/images/din.jpg";
+import dinner2 from "../assets/images/dinner2.avif";
+import ami from "../assets/images/ami.avif";
+import copain from "../assets/images/copain.avif";
+import Instagram from "../components/Instagram.astro";
+---
+
+<Layout>
+  <Navigation />
+  <section>
+    <div class="relative">
+      <img class="w-full object-cover h-[600px]" src={menu.src} alt="" />
+      <h3 class="absolute left-[10%] bottom-[20%] text-white text-4xl">Menu</h3>
+    </div>
+  </section>
+  <section class="max-w-4xl mx-auto py-12 px-4">
+    <h2 class="text-center text-3xl font-serif font-bold mb-6">Breakfast</h2>
+    <p class="text-center text-gray-500 mb-8">DAILY 11:00 AM - 01:00 PM</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- partie de gauche -->
+      <div class="space-y-6">
+        <div class="flex justify-between items-start">
+          <div>
+            <span class="bg-black text-white text-xs px-2 py-1 rounded"
+              >NEW</span
+            >
+            <h3 class="font-bold tracking-wide">Oyster Omelet</h3>
+            <p class="text-gray-500 text-lg">
+              Three fresh shucked Corpus Christi oysters, horseradish cheese,
+              and onions. Served with two sourdough biscuits.
+            </p>
+          </div>
+          <span class="font-bold text-gray-700">8$</span>
+        </div>
+
+        <div class="flex justify-between items-start">
+          <div>
+            <h3 class="font-bold tracking-wide">Blueberry Pancakes</h3>
+            <p class="text-gray-500 text-lg">
+              Three buttermilk pancakes topped with fresh blueberries, honeycomb
+              butter and dusted with icing sugar. Served with maple syrup.
+            </p>
+          </div>
+          <span class="font-bold text-gray-700">10$</span>
+        </div>
+
+        <div class="flex justify-between items-start">
+          <div>
+            <h3 class="font-bold tracking-wide">Eggs Benedict</h3>
+            <p class="text-gray-500 text-lg">
+              Toasted muffin, two poached eggs, hollandaise sauce, sprinkled
+              with chopped chives. Choose from ham or bacon.
+            </p>
+          </div>
+          <span class="font-bold text-gray-700">6$</span>
+        </div>
+
+        <div class="flex justify-between items-start">
+          <div>
+            <h3 class="font-bold tracking-wide">Veggie Stacker</h3>
+            <p class="text-gray-500 text-lg">
+              Our freshly baked rosemary bread filled with a potato rosti, fresh
+              tomato, cheese, smashed avocado, fried egg, and tomato ketchup.
+            </p>
+          </div>
+          <span class="font-bold text-gray-700">6$</span>
+        </div>
+      </div>
+
+      <!-- partie droite -->
+      <div class="space-y-6">
+        <div class="flex justify-between items-start">
+          <div>
+            <h3 class="font-semibold tracking-wide">Traditional Breakfast</h3>
+            <p class="text-gray-500 text-lg">
+              Sausage, three rashers of streaky bacon, two fried eggs, grilled
+              tomato, button mushrooms, Heinz baked beans, and crispy herb
+              potatoes.
+            </p>
+          </div>
+          <span class="font-bold text-gray-700">9$</span>
+        </div>
+
+        <div class="flex justify-between items-start">
+          <div>
+            <h3 class="font-semibold tracking-wide">Smashed Avocado</h3>
+            <p class="text-gray-500 text-lg">
+              Toasted rosemary bread, topped with smashed avocado and two
+              poached eggs.
+            </p>
+          </div>
+          <span class="font-bold text-gray-700">11$</span>
+        </div>
+
+        <div class="flex justify-between items-start">
+          <div>
+            <span class="bg-green-600 text-white text-xs px-2 py-1 rounded"
+              >VEGAN</span
+            >
+            <h3 class="font-semibold tracking-wide">Veggie Breakfast</h3>
+            <p class="text-gray-500 text-lg">
+              Two fried eggs, button mushrooms, grilled tomato, Heinz baked
+              beans, and a potato rosti topped with smashed avocado. Served with
+              brown toast and butter.
+            </p>
+          </div>
+          <span class="font-bold text-gray-700">7$</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    class="grid grid-cols-1 gap-12 mb-[00px] sm:m-auto md:grid-cols-2 w-[90%]"
+  >
+    <img
+      class="md:w-[1000px] md:h-[500px] object-cover"
+      src={apple.src}
+      alt=""
+    />
+    <img
+      class="md:w-[1000px] md:h-[500px] object-cover"
+      src={edbeere.src}
+      alt=""
+    />
+  </section>
+  <section class="max-w-4xl mx-auto py-12 px-4">
+    <h2 class="text-center text-3xl font-serif font-bold mb-6">Lunch</h2>
+    <p class="text-center text-gray-500 mb-8">DAILY 01:00 PM - 03:00 PM</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- gauche -->
+      <div class="space-y-6">
+        <div class="flex justify-between items-start">
+          <div>
+            <span class="bg-black text-white text-xs px-2 py-1 rounded"
+              >NEW</span
+            >
+            <h3 class="font-bold tracking-wide">Garlic and Cheese Mushrooms</h3>
+            <p class="text-gray-500 text-lg">
+              Baked mushrooms in a garlic and cheese sauce with a cheesy crumb,
+              sprinkled with chopped chives and served with freshly baked
+              rosemary bread.
+            </p>
+          </div>
+          <span class="font-bold text-gray-700">8$</span>
+        </div>
+
+        <div class="flex justify-between items-start">
+          <div>
+            <h3 class="font-bold tracking-wide">
+              Crispy Coated Chicken Strips
+            </h3>
+            <p class="text-gray-500 text-lg">
+              Two southern fried chicken strips on honey mustard-dressed lettuce
+              leaves with celery sticks and a pot of Red French dressing.
+            </p>
+          </div>
+          <span class="font-bold text-gray-700">10$</span>
+        </div>
+
+        <div class="flex justify-between items-start">
+          <div>
+            <h3 class="font-bold tracking-wide">Amazing Skins</h3>
+            <p class="text-gray-500 text-lg">
+              Loaded potato skins with a pot of sour cream. Choose from: Crispy
+              Bacon and Cheddar Cheese Goat’s Cheese and Homemade Bruschetta Mix
+            </p>
+          </div>
+          <span class="font-bold text-gray-700">6$</span>
+        </div>
+
+        <div class="flex justify-between items-start">
+          <div>
+            <h3 class="font-bold tracking-wide">Chicken Caesar Wrap</h3>
+            <p class="text-gray-500 text-lg">
+              Crispy coated chicken strips, baby gem lettuce, Grana Padano and
+              Caesar dressing in a flour tortilla.
+            </p>
+          </div>
+          <span class="font-bold text-gray-700">6$</span>
+        </div>
+        <div class="flex justify-between items-start">
+          <div>
+            <h3 class="font-bold tracking-wide">Mushroom Penne Pasta</h3>
+            <p class="text-gray-500 text-lg">
+              Penne pasta in a mushroom and white wine sauce, with fresh thyme
+              and rocket.
+            </p>
+          </div>
+          <span class="font-bold text-gray-700">6$</span>
+        </div>
+      </div>
+
+      <!-- droite -->
+      <div class="space-y-6">
+        <div class="flex justify-between items-start">
+          <div>
+            <h3 class="font-semibold tracking-wide">Beef Lasagne</h3>
+            <p class="text-gray-500 text-lg">
+              Rich beef ragu and creamy bechamel sauce layered between pasta
+              sheets, with Neapolitan sauce.
+            </p>
+          </div>
+          <span class="font-bold text-gray-700">9$</span>
+        </div>
+
+        <div class="flex justify-between items-start">
+          <div>
+            <h3 class="font-semibold tracking-wide">Cajun Chicken Mayo Wrap</h3>
+            <p class="text-gray-500 text-lg">
+              Crispy coated chicken strips, cajun mayo, iceberg lettuce, red
+              onion and cheese in a flour tortilla wrap.
+            </p>
+          </div>
+          <span class="font-bold text-gray-700">11$</span>
+        </div>
+
+        <div class="flex justify-between items-start">
+          <div>
+            <h3 class="font-semibold tracking-wide">ABC Salad</h3>
+            <p class="text-gray-500 text-lg">
+              Avocado, bacon and chicken, tossed with mixed salad leaves,
+              tomatoes and red onions, with a honey and mustard dressing.
+            </p>
+          </div>
+          <span class="font-bold text-gray-700">7$</span>
+        </div>
+        <div class="flex justify-between items-start">
+          <div>
+            <h3 class="font-semibold tracking-wide">Spaghetti Bolognese</h3>
+            <p class="text-gray-500 text-lg">
+              Spaghetti with Cousin Mario's bolognese sauce.
+            </p>
+          </div>
+          <span class="font-bold text-gray-700">11$</span>
+        </div>
+        <div class="flex justify-between items-start">
+          <div>
+            <h3 class="font-semibold tracking-wide">Spaghetti Carbonara</h3>
+            <p class="text-gray-500 text-lg">
+              Spaghetti with streaky bacon, sautéed mushrooms and Grana Padano
+              in a creamy cheese sauce.
+            </p>
+          </div>
+          <span class="font-bold text-gray-700">11$</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    class="grid grid-cols-1 gap-12 mb-[00px] sm:m-auto md:grid-cols-2 w-[90%]"
+  >
+    <img
+      class="md:w-[1000px] md:h-[500px] object-cover"
+      src={link.src}
+      alt=""
+    />
+    <img
+      class="md:w-[1000px] md:h-[500px] object-cover"
+      src={recht.src}
+      alt=""
+    />
+  </section>
+  <section class="max-w-4xl mx-auto py-12 px-4">
+    <h2 class="text-center text-3xl font-serif font-bold mb-6">Dinner</h2>
+    <p class="text-center text-gray-500 mb-8">
+      SERVED DAILY FROM  06:00 PM TILL CLOSE
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- gauche -->
+      <div class="space-y-6">
+        <div class="flex justify-between items-start">
+          <div>
+            <span class="bg-black text-white text-xs px-2 py-1 rounded"
+              >NEW</span
+            >
+            <h3 class="font-bold tracking-wide">Garlic and Cheese Mushrooms</h3>
+            <p class="text-gray-500 text-lg">
+              Baked mushrooms in a garlic and cheese sauce with a cheesy crumb,
+              sprinkled with chopped chives and served with freshly baked
+              rosemary bread.
+            </p>
+          </div>
+          <span class="font-bold text-gray-700">8$</span>
+        </div>
+
+        <div class="flex justify-between items-start">
+          <div>
+            <h3 class="font-bold tracking-wide">
+              Crispy Coated Chicken Strips
+            </h3>
+            <p class="text-gray-500 text-lg">
+              Two southern fried chicken strips on honey mustard-dressed lettuce
+              leaves with celery sticks and a pot of Red French dressing.
+            </p>
+          </div>
+          <span class="font-bold text-gray-700">10$</span>
+        </div>
+
+        <div class="flex justify-between items-start">
+          <div>
+            <h3 class="font-bold tracking-wide">Amazing Skins</h3>
+            <p class="text-gray-500 text-lg">
+              Loaded potato skins with a pot of sour cream. Choose from: Crispy
+              Bacon and Cheddar Cheese Goat’s Cheese and Homemade Bruschetta Mix
+            </p>
+          </div>
+          <span class="font-bold text-gray-700">6$</span>
+        </div>
+
+        <div class="flex justify-between items-start">
+          <div>
+            <h3 class="font-bold tracking-wide">Chicken Caesar Wrap</h3>
+            <p class="text-gray-500 text-lg">
+              Crispy coated chicken strips, baby gem lettuce, Grana Padano and
+              Caesar dressing in a flour tortilla.
+            </p>
+          </div>
+          <span class="font-bold text-gray-700">6$</span>
+        </div>
+        <div class="flex justify-between items-start">
+          <div>
+            <h3 class="font-bold tracking-wide">Mushroom Penne Pasta</h3>
+            <p class="text-gray-500 text-lg">
+              Penne pasta in a mushroom and white wine sauce, with fresh thyme
+              and rocket.
+            </p>
+          </div>
+          <span class="font-bold text-gray-700">6$</span>
+        </div>
+      </div>
+
+      <!-- droite-->
+      <div class="space-y-6">
+        <div class="flex justify-between items-start">
+          <div>
+            <h3 class="font-semibold tracking-wide">Beef Lasagne</h3>
+            <p class="text-gray-500 text-lg">
+              Rich beef ragu and creamy bechamel sauce layered between pasta
+              sheets, with Neapolitan sauce.
+            </p>
+          </div>
+          <span class="font-bold text-gray-700">9$</span>
+        </div>
+
+        <div class="flex justify-between items-start">
+          <div>
+            <h3 class="font-semibold tracking-wide">Cajun Chicken Mayo Wrap</h3>
+            <p class="text-gray-500 text-lg">
+              Crispy coated chicken strips, cajun mayo, iceberg lettuce, red
+              onion and cheese in a flour tortilla wrap.
+            </p>
+          </div>
+          <span class="font-bold text-gray-700">11$</span>
+        </div>
+
+        <div class="flex justify-between items-start">
+          <div>
+            <h3 class="font-semibold tracking-wide">ABC Salad</h3>
+            <p class="text-gray-500 text-lg">
+              Avocado, bacon and chicken, tossed with mixed salad leaves,
+              tomatoes and red onions, with a honey and mustard dressing.
+            </p>
+          </div>
+          <span class="font-bold text-gray-700">7$</span>
+        </div>
+        <div class="flex justify-between items-start">
+          <div>
+            <h3 class="font-semibold tracking-wide">Spaghetti Bolognese</h3>
+            <p class="text-gray-500 text-lg">
+              Spaghetti with Cousin Mario's bolognese sauce.
+            </p>
+          </div>
+          <span class="font-bold text-gray-700">11$</span>
+        </div>
+        <div class="flex justify-between items-start">
+          <div>
+            <h3 class="font-semibold tracking-wide">Spaghetti Carbonara</h3>
+            <p class="text-gray-500 text-lg">
+              Spaghetti with streaky bacon, sautéed mushrooms and Grana Padano
+              in a creamy cheese sauce.
+            </p>
+          </div>
+          <span class="font-bold text-gray-700">11$</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    class="grid grid-cols-1 gap-12 mb-[00px] sm:m-auto md:grid-cols-2 w-[90%]"
+  >
+    <img
+      class="md:w-[1000px] md:h-[550px]  object-cover"
+      src={dinner2.src}
+      alt=""
+    />
+    <img class="md:w-[1000px] md:h-[550px] object-center object-cover" src={din.src} alt="" />
+  </section>
+  <section class="max-w-4xl mx-auto py-12 px-4">
+    <h2 class="text-center text-3xl font-serif font-bold mb-6">Desserts</h2>
+    <p class="text-center text-gray-500 mb-8">
+      SERVED DAILY 
+    </p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- gauche-->
+      <div class="space-y-6">
+        <div class="flex justify-between items-start">
+          <div>
+            <span class="bg-black text-white text-xs px-2 py-1 rounded"
+              >NEW</span
+            >
+            <h3 class="font-bold tracking-wide">Garlic and Cheese Mushrooms</h3>
+            <p class="text-gray-500 text-lg">
+              Baked mushrooms in a garlic and cheese sauce with a cheesy crumb,
+              sprinkled with chopped chives and served with freshly baked
+              rosemary bread.
+            </p>
+          </div>
+          <span class="font-bold text-gray-700">8$</span>
+        </div>
+
+        <div class="flex justify-between items-start">
+          <div>
+            <h3 class="font-bold tracking-wide">
+              Crispy Coated Chicken Strips
+            </h3>
+            <p class="text-gray-500 text-lg">
+              Two southern fried chicken strips on honey mustard-dressed lettuce
+              leaves with celery sticks and a pot of Red French dressing.
+            </p>
+          </div>
+          <span class="font-bold text-gray-700">10$</span>
+        </div>
+
+        <div class="flex justify-between items-start">
+          <div>
+            <h3 class="font-bold tracking-wide">Amazing Skins</h3>
+            <p class="text-gray-500 text-lg">
+              Loaded potato skins with a pot of sour cream. Choose from: Crispy
+              Bacon and Cheddar Cheese Goat’s Cheese and Homemade Bruschetta Mix
+            </p>
+          </div>
+          <span class="font-bold text-gray-700">6$</span>
+        </div>
+
+        <div class="flex justify-between items-start">
+          <div>
+            <h3 class="font-bold tracking-wide">Chicken Caesar Wrap</h3>
+            <p class="text-gray-500 text-lg">
+              Crispy coated chicken strips, baby gem lettuce, Grana Padano and
+              Caesar dressing in a flour tortilla.
+            </p>
+          </div>
+          <span class="font-bold text-gray-700">6$</span>
+        </div>
+        <div class="flex justify-between items-start">
+          <div>
+            <h3 class="font-bold tracking-wide">Mushroom Penne Pasta</h3>
+            <p class="text-gray-500 text-lg">
+              Penne pasta in a mushroom and white wine sauce, with fresh thyme
+              and rocket.
+            </p>
+          </div>
+          <span class="font-bold text-gray-700">6$</span>
+        </div>
+      </div>
+
+      <!-- droite -->
+      <div class="space-y-6">
+        <div class="flex justify-between items-start">
+          <div>
+            <h3 class="font-semibold tracking-wide">Beef Lasagne</h3>
+            <p class="text-gray-500 text-lg">
+              Rich beef ragu and creamy bechamel sauce layered between pasta
+              sheets, with Neapolitan sauce.
+            </p>
+          </div>
+          <span class="font-bold text-gray-700">9$</span>
+        </div>
+
+        <div class="flex justify-between items-start">
+          <div>
+            <h3 class="font-semibold tracking-wide">Cajun Chicken Mayo Wrap</h3>
+            <p class="text-gray-500 text-lg">
+              Crispy coated chicken strips, cajun mayo, iceberg lettuce, red
+              onion and cheese in a flour tortilla wrap.
+            </p>
+          </div>
+          <span class="font-bold text-gray-700">11$</span>
+        </div>
+
+        <div class="flex justify-between items-start">
+          <div>
+            <h3 class="font-semibold tracking-wide">ABC Salad</h3>
+            <p class="text-gray-500 text-lg">
+              Avocado, bacon and chicken, tossed with mixed salad leaves,
+              tomatoes and red onions, with a honey and mustard dressing.
+            </p>
+          </div>
+          <span class="font-bold text-gray-700">7$</span>
+        </div>
+        <div class="flex justify-between items-start">
+          <div>
+            <h3 class="font-semibold tracking-wide">Spaghetti Bolognese</h3>
+            <p class="text-gray-500 text-lg">
+              Spaghetti with Cousin Mario's bolognese sauce.
+            </p>
+          </div>
+          <span class="font-bold text-gray-700">11$</span>
+        </div>
+        <div class="flex justify-between items-start">
+          <div>
+            <h3 class="font-semibold tracking-wide">Spaghetti Carbonara</h3>
+            <p class="text-gray-500 text-lg">
+              Spaghetti with streaky bacon, sautéed mushrooms and Grana Padano
+              in a creamy cheese sauce.
+            </p>
+          </div>
+          <span class="font-bold text-gray-700">11$</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    class="grid grid-cols-1 gap-12 pb-[100px] sm:m-auto md:grid-cols-2 w-[90%]"
+  >
+    <img
+      class="md:w-[1000px] md:h-[500px] object-cover"
+      src={ami.src}
+      alt=""
+    />
+    <img class="md:w-[1000px] md:h-[500px] object-cover" src={copain.src} alt="" />
+  </section>
+  <Instagram/>
+  <Footer/>
+</Layout>

@@ -2,25 +2,25 @@
 import Navigation from "../components/Navigation.astro";
 import Layout from "../layouts/Layout.astro";
 import Footer from "../components/Footer.astro";
-import restaurant from "../assets/images/restaurant.avif";
+import res from "../assets/images/res.avif";
 import photo from "../assets/images/photo.avif";
 import un from "../assets/images/un.avif";
 import "../CSS/font.css";
 import deux from "../assets/images/deux.avif";
 import drei from "../assets/images/drei.avif";
-import vier from "../assets/images/vier.webp";
+import vier from "../assets/images/vier.avif";
 import Instagram from "../components/Instagram.astro";
 ---
 
 <Layout>
     <Navigation />
 
-    <body>
+    
         <section>
             <div class="relative">
                 <img
                     class="w-full object-cover h-[600px]"
-                    src={restaurant.src}
+                    src={res.src}
                     alt=""
                 />
                 <h3
@@ -34,7 +34,7 @@ import Instagram from "../components/Instagram.astro";
             class="grid md:grid-cols-2 md:gap-[20px] items-center w-[90%] h-[650px] p-[90px] lg:grid-cols-2 lg:gap-[40px] sm:grid-cols-1 gap-[00px]"
         >
             <img
-                class="w-[950px] h-[500px] object-cover"
+                class="w-[950px] h-[500px] object-cover shadow-lg shadow-orange-500/50 rounded-lg"
                 src={photo.src}
                 alt="ein photo"
             />
@@ -51,8 +51,8 @@ import Instagram from "../components/Instagram.astro";
         <section
             class="grid md:grid-cols-2  sm:mt-[200px] md:mt-[50px] gap-10 p-[20px] sm:grid-cols-1 lg:grid-cols-2 lg:gap-[40px]"
         >
-            <img class="w-full p-6 object-cover" src={un.src} alt="photo" />
-            <img class="w-full object-cover" src={deux.src} alt="" />
+            <img class="w-full p-6 object-cover shadow-lg shadow-orange-500/50 rounded-lg" src={un.src} alt="photo" />
+            <img class="w-full object-cover  p-6 shadow-lg shadow-orange-500/50 rounded-lg" src={deux.src} alt="" />
         </section>
         <section
             class="grid md:grid-cols-2 md:mt-[50px] items-center w-[90%] h-[650px] p-[90px] sm:grid-cols-1 lg:grid-cols-2 lg:gap-[40px] gap-[100px]"
@@ -76,7 +76,7 @@ import Instagram from "../components/Instagram.astro";
             </div>
             <div>
                 <img
-                    class="w-[950px] h-[500px] object-cover"
+                    class="w-[950px] h-[500px] object-cover  shadow-lg shadow-orange-500/50 rounded-lg"
                     src={drei.src}
                     alt="ein photo"
                 />
@@ -91,7 +91,7 @@ import Instagram from "../components/Instagram.astro";
                 />
             </div>
             <div class=" m-auto w-[50%] ">
-                <p class="text-center mb-9">
+                <p class="text-center text-3xl mb-9">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Commodi iure repellendus doloribus nobis, culpa ullam fugit
                     eos magnam soluta et dignissimos ad repellat ipsam deleniti
@@ -103,7 +103,7 @@ import Instagram from "../components/Instagram.astro";
         </section>
         <Instagram/>
 
-    </body>
+    
     <Footer/>
     </Layout
 >

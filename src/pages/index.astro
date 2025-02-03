@@ -14,6 +14,7 @@ import yes from "../assets/images/yes.jpg";
 import tomato from "../assets/images/tomato.avif";
 import macchiato from "../assets/images/macchiato.avif";
 import raspberry from "../assets/images/raspberry.avif";
+import Instagram from "../components/Instagram.astro";
 
 import "../CSS/style.css";
 import "../CSS/font.css";
@@ -71,11 +72,11 @@ import "../CSS/font.css";
         <span class="absolute bottom-[40%] left-4 text-white text-lg font-bold">DRINKS</span>
     </div>
     <div class="relative">
-        <img src={dessert.src} alt="Desserts" class="md:w-full sm:w-full sm:h-[400px] hover:scale-105 linear duration-300 h-[650px] object-cover ">
+        <img src={dessert.src} alt="Desserts" class="md:w-full sm:w-full sm:h-[400px] hover:scale-105  lg:h-[600px] linear duration-300 h-[650px] object-cover ">
         <span class="absolute bottom-[40%] left-4 text-white text-lg font-bold">DESSERTS</span>
     </div>
     <div class="relative">
-        <img src={breakfast.src} alt="Breakfast" class="md:w-full sm:w-full sm:h-[400px] hover:scale-105 linear duration-300 h-full object-cover ">
+        <img src={breakfast.src} alt="Breakfast" class="md:w-full sm:w-full sm:h-[400px] lg:h-[600px] hover:scale-105 linear duration-300 h-full object-cover ">
         <span class="absolute bottom-[40%] left-4 text-white text-lg font-bold">BREAKFAST</span>
     </div>
 </section>
@@ -191,6 +192,7 @@ import "../CSS/font.css";
         enjoyed this place great food great staff
     </p>
 </section>
+<Instagram/>
 
 <Footer />
 </Layout
