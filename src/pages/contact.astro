@@ -9,144 +9,126 @@ import Instagram from "../components/Instagram.astro";
 <Layout>
     <Navigation />
 
-    <body>
-        <section>
-            <div class="relative">
-                <img
-                    class="w-full object-cover h-[600px]"
-                    src={yes.src}
-                    alt=""
-                />
-                <h3 class="absolute left-[10%] bottom-[20%] text-4xl">
-                    Contact Us
-                </h3>
+    <section>
+        <div class="relative">
+            <img class="w-full object-cover h-[600px]" src={yes.src} alt="" />
+            <h3 class="absolute left-[10%] bottom-[20%] text-4xl">
+                Contact Us
+            </h3>
+        </div>
+
+        <section class="p-[20px] md:grid grid-cols-3 text-center">
+            <div class="p-[20px]">
+                <h6>GENERAL INQUIRIES</h6>
+                <a href="mailto:info@yourdomain.com">info@yourdomain.com</a>
+            </div>
+            <div class="p-[20px]">
+                <h6>PRESS INQUIRIES</h6>
+                <a href="mailto:press@yourdomain.com">press@yourdomain.com</a>
+            </div>
+            <div class="p-[20px]">
+                <h6>ORDERS INQUIRIES</h6>
+                <a href="mailto:order@yourdomain.com">order@yourdomain.com</a>
+            </div>
+            <div class="p-[20px]">
+                <h6>CALL US</h6>
+                <a href="TEL:+1234 567 678">info@yourdomain.com</a>
+            </div>
+            <div class="p-[20px]">
+                <h6>GENERAL INQUIRIES</h6>
+                <p>City Hall Park, New York, NY 10007</p>
+            </div>
+        </section>
+        <section
+            class="bg-gray-100 w-full md:flex justify-between gap-[200px] p-6"
+        >
+            <!-- Formulaire de contact -->
+            <div class="w-full md:w-1/2">
+                <h2 class="text-2xl font-bold text-gray-800 text-center mb-4">
+                    Contact us
+                </h2>
+                <form action="#" method="POST" class="bg-orange-100 space-y-12">
+                    <div>
+                        <label
+                            for="name"
+                            class="block text-gray-700 font-medium"></label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Name"
+                            required
+                            class="w-full px-4 py-4 border focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        />
+                    </div>
+                    <div>
+                        <label
+                            for="email"
+                            class="block text-gray-700 font-medium"></label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Email"
+                            required
+                            class="w-full px-4 py-4 border focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        />
+                    </div>
+                    <div>
+                        <label
+                            for="subject"
+                            class="block text-gray-700 font-medium"></label>
+                        <input
+                            type="text"
+                            id="subject"
+                            name="subject"
+                            placeholder="Subjet"
+                            required
+                            class="w-full px-4 py-4 border focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        />
+                    </div>
+                    <div>
+                        <label
+                            for="message"
+                            class="block text-gray-700 font-medium"></label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            placeholder="Message"
+                            rows="6"
+                            required
+                            class="w-full px-4 py-3 border focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        ></textarea>
+                    </div>
+                    <button
+                        type="submit"
+                        class="w-full bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-300"
+                    >
+                        Submit
+                    </button>
+                </form>
             </div>
 
-            <section class="p-[20px] md:grid grid-cols-3 text-center">
-                <div class="p-[20px]">
-                    <h6>GENERAL INQUIRIES</h6>
-                    <a href="mailto:info@yourdomain.com">info@yourdomain.com</a>
-                </div>
-                <div class="p-[20px]">
-                    <h6>PRESS INQUIRIES</h6>
-                    <a href="mailto:press@yourdomain.com"
-                        >press@yourdomain.com</a
+            <!-- Google Maps -->
+            <div class="md:w-1/2">
+                <h2 class="text-2xl font-bold text-gray-800 text-center mb-4">
+                    Visit us
+                </h2>
+                <div
+                    class="w-full h-[500px] rounded-lg overflow-hidden shadow-lg"
+                >
+                    <iframe
+                        class="w-full h-full"
+                        loading="lazy"
+                        allowfullscreen
+                        referrerpolicy="no-referrer-when-downgrade"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9992041371563!2d2.292292315674905!3d48.85884477928702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fdfb9c5f6eb%3A0x42812d8e5a2a52!2sTour%20Eiffel!5e0!3m2!1sfr!2sfr!4v1675589045777!5m2!1sfr!2sfr"
                     >
+                    </iframe>
                 </div>
-                <div class="p-[20px]">
-                    <h6>ORDERS INQUIRIES</h6>
-                    <a href="mailto:order@yourdomain.com"
-                        >order@yourdomain.com</a
-                    >
-                </div>
-                <div class="p-[20px]">
-                    <h6>CALL US</h6>
-                    <a href="TEL:+1234 567 678">info@yourdomain.com</a>
-                </div>
-                <div class="p-[20px]">
-                    <h6>GENERAL INQUIRIES</h6>
-                    <p>City Hall Park, New York, NY 10007</p>
-                </div>
-            </section>
-            <section
-                class="bg-gray-100 w-full md:flex justify-between gap-[200px] p-6"
-            >
-                <!-- Formulaire de contact -->
-                <div class="w-full md:w-1/2">
-                    <h2
-                        class="text-2xl font-bold text-gray-800 text-center mb-4"
-                    >
-                        Contact us
-                    </h2>
-                    <form
-                        action="#"
-                        method="POST"
-                        class="bg-orange-100 space-y-12"
-                    >
-                        <div>
-                            <label
-                                for="name"
-                                class="block text-gray-700 font-medium"></label>
-                            <input
-                                type="text"
-                                id="name"
-                                name="name"
-                                placeholder="Name"
-                                required
-                                class="w-full px-4 py-4 border focus:outline-none focus:ring-2 focus:ring-blue-500"
-                            />
-                        </div>
-                        <div>
-                            <label
-                                for="email"
-                                class="block text-gray-700 font-medium"></label>
-                            <input
-                                type="email"
-                                id="email"
-                                name="email"
-                                placeholder="Email"
-                                required
-                                class="w-full px-4 py-4 border focus:outline-none focus:ring-2 focus:ring-blue-500"
-                            />
-                        </div>
-                        <div>
-                            <label
-                                for="subject"
-                                class="block text-gray-700 font-medium"></label>
-                            <input
-                                type="text"
-                                id="subject"
-                                name="subject"
-                                placeholder="Subjet"
-                                required
-                                class="w-full px-4 py-4 border focus:outline-none focus:ring-2 focus:ring-blue-500"
-                            />
-                        </div>
-                        <div>
-                            <label
-                                for="message"
-                                class="block text-gray-700 font-medium"></label>
-                            <textarea
-                                id="message"
-                                name="message"
-                                placeholder="Message"
-                                rows="6"
-                                required
-                                class="w-full px-4 py-3 border focus:outline-none focus:ring-2 focus:ring-blue-500"
-                            ></textarea>
-                        </div>
-                        <button
-                            type="submit"
-                            class="w-full bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-300"
-                        >
-                            Submit
-                        </button>
-                    </form>
-                </div>
-
-                <!-- Google Maps -->
-                <div class="md:w-1/2">
-                    <h2
-                        class="text-2xl font-bold text-gray-800 text-center mb-4"
-                    >
-                        Visit us
-                    </h2>
-                    <div
-                        class="w-full h-[500px] rounded-lg overflow-hidden shadow-lg"
-                    >
-                        <iframe
-                            class="w-full h-full"
-                            loading="lazy"
-                            allowfullscreen
-                            referrerpolicy="no-referrer-when-downgrade"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9992041371563!2d2.292292315674905!3d48.85884477928702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fdfb9c5f6eb%3A0x42812d8e5a2a52!2sTour%20Eiffel!5e0!3m2!1sfr!2sfr!4v1675589045777!5m2!1sfr!2sfr"
-                        >
-                        </iframe>
-                    </div>
-                </div>
-            </section>
-            <Instagram />
-            <Footer />
+            </div>
         </section>
-    </body>
+        <Instagram />
+        <Footer />
+    </section>
 </Layout>

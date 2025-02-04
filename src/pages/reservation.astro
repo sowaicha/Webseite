@@ -1,0 +1,93 @@
+---
+import Navigation from "../components/Navigation.astro";
+import Layout from "../layouts/Layout.astro";
+import Footer from "../components/Footer.astro";
+import table from "../assets/images/table.jpg";
+import Instagram from "../components/Instagram.astro";
+import "../CSS/font.css";
+---
+
+<Layout>
+    <Navigation />
+    <section>
+        <div class="relative">
+            <img class="w-full object-cover h-[600px]" src={table.src} alt="" />
+            <h3 class="absolute left-[10%] bottom-[20%] text-white md:text-4xl">
+                Reservation
+            </h3>
+        </div>
+    </section>
+    <section class="mt-[80px]">
+        <div class="w-[40%] m-auto">
+            <h3 class="text-center">CHOOSE A DATE</h3>
+            <p class="text-sm md:text-3xl text-center mt-[40px]">
+                I am text block. Click edit button to change this text. Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            </p>
+        </div>
+    </section>
+    <section
+        class="md:grid grid-cols-2 items-center w-[60%] m-auto mt-11 mb-11"
+    >
+        <div class="max-w-md mx-auto bg-white p-6 rounded-lg shadow-lg">
+            <form>
+                <label class="block mt-4 mb-2 font-medium"></label>
+                <input
+                    type="date"
+                    class="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    required
+                />
+
+                <label class="block mt-4 mb-2 font-medium"></label>
+                <input
+                    type="time"
+                    class="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    required
+                />
+
+                <label class="block mt-4 mb-2 font-medium"></label>
+                <input
+                    type="number"
+                    min="1"
+                    class="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    placeholder="Anzahl der Personen"
+                    required
+                />
+                <button
+                    type="submit"
+                    class="w-full mt-6 bg-blue-500 text-white p-2 rounded-lg hover:bg-blue-600 transition"
+                    >Reservieren</button
+                >
+            </form>
+        </div>
+        <div class="mt-[20px]">
+            <button class="relative overflow-hidden px-8 py-4  text-white font-bold rounded-lg border border-white-500 bg-transparent group">
+                <span class="absolute left-0 top-0 h-full w-0 bg-blue-500 transition-all duration-500 group-hover:w-full"></span>
+                <span class="relative  text-black z-10">JOIN WAITLIST</span>
+              </button>
+        </div>
+    </section>
+    <section>
+        <div class="relative md:text-2xl">
+            <img class="w-full object-cover h-[600px]" src={table.src} alt="" />
+            <div
+                class="absolute bottom-[20%] space-y-7 md:bottom-[10%] text-white md:left-[45%] text-center font-medium left-[40%]"
+            >
+                <h2>OPEN HOURS</h2>
+                <h3 class="md:text-2xl">Monday-Friday</h3>
+                <h4>FROM 08:00 - 23:00 PM</h4>
+                <h3>Sunday</h3>
+                <h4>FROM 08:00 - 23:00 PM</h4>
+                <h3>Saturday</h3>
+                <h4>Closed</h4>
+                <button class="relative overflow-hidden px-8 py-4  text-white font-bold rounded-lg border border-white-500 bg-transparent group">
+                    <span class="absolute left-0 top-0 h-full w-0 bg-orange-200 transition-all duration-500 group-hover:w-full"></span>
+                    <a href="http:/contact"><span class="relative  text-black z-10">CONTACT US</span></a>
+                  </bu
+            </div>
+        </div>
+    </section>
+    <Instagram/>
+    <Footer/>
+</Layout>
