@@ -19,7 +19,7 @@ import Instagram from "../components/Instagram.astro";
         <section>
             <div class="relative">
                 <img
-                    class="w-full object-cover h-[600px]"
+                    class="w-full object-cover md:h-[600px]"
                     src={res.src}
                     alt=""
                 />
@@ -31,7 +31,7 @@ import Instagram from "../components/Instagram.astro";
             </div>
         </section>
         <section
-            class=" md:grid grid-cols-2 md:gap-[20px] items-center w-[90%] h-[650px] p-[90px] lg:grid-cols-2 lg:gap-[40px]  "
+            class=" md:grid grid-cols-2 md:gap-[20px] items-center  md:h-[650px] p-[90px] lg:grid-cols-2 lg:gap-[40px]  "
         >
             <img
                 class=" w-full md:w-[950px] md:h-[500px] object-cover shadow-lg shadow-orange-500/50 rounded-lg"
@@ -49,13 +49,13 @@ import Instagram from "../components/Instagram.astro";
             </div>
         </section>
         <section
-            class="md:grid grid-cols-2  md:mt-[50px] gap-10 p-[20px]  lg:grid-cols-2 lg:gap-[40px]"
+            class="md:grid grid-cols-2  md:mt-[50px]  p-10   lg:gap-[40px]"
         >
-            <img class="w-full p-6 object-cover shadow-lg shadow-orange-500/50 rounded-lg" src={un.src} alt="photo" />
-            <img class="w-full object-cover  p-6 shadow-lg shadow-orange-500/50 rounded-lg" src={deux.src} alt="" />
+            <img class="w-full  p-6 object-cover shadow-lg shadow-orange-500/50 rounded-lg" src={un.src} alt="photo" />
+            <img class="w-full mt-[25px] object-cover md:mt-0 p-6 shadow-lg shadow-orange-500/50 rounded-lg" src={deux.src} alt="" />
         </section>
         <section
-            class=" md:grid grid-cols-2 md:mt-[50px] items-center w-[90%] h-[650px] p-[90px] lg:grid-cols-2 lg:gap-[40px] gap-[100px]"
+            class=" md:grid grid-cols-2 md:mt-[50px] items-center  md:h-[650px] p-[60px] lg:grid-cols-2 md:gap-[40px] "
         >
             <div h->
                 <h4>SINCE 2002</h4>
@@ -85,7 +85,7 @@ import Instagram from "../components/Instagram.astro";
         <section class="   md:mt-[40px] ">
             <div class="m-[40px]">
                 <img
-                    class="w-full h-[700px] object-cover"
+                    class="w-full md:h-[700px] object-cover"
                     src={vier.src}
                     alt="photo"
                 />
